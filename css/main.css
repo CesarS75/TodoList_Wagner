@@ -10,5 +10,24 @@
     --bg-color: rgb(150 50 150);
     --bg-color-dark: rgb(70, 50, 70);
     --font-color: white;
-    --input-color: rgb(151, 83, 91);
+    --input-color: rgb(185, 138, 143);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--bg-color);
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#entrada input {
+    margin-top: 20px;
+    padding: 30px;
+    width: 500px;
+    height: 10px;
+    background: var(--input-color);
+    font-size: 30px;
 }
