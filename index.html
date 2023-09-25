@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
+    <meta name="author" content="Wagner Cesar Vieira">
     <link rel="stylesheet" href="css/main.css">
-    <meta name="author" content="Cesar Savoldi">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="pages/historico.html">Histórico</a></li>
                 <li><a href="pages/sobre.html">Sobre</a></li>
                 <li><a href="pages/ajuda.html">Ajuda</a></li>
             </ul>
@@ -21,18 +20,20 @@
     </header>
 
     <main class="container">
-        <section class="titulo">
-            <h1>Tudo List</h1>
+        <section class="titulo"></section>
+
+        <section class="novoItem" id="novoItem">
+            <section>&and;</section>
+            <input type="text" class="novoItem" placeholder="Digite sua tarefa aqui">
+            <section>&and;</section>
         </section>
 
-        <section id="entrada">
-            <input type="text" id="item">
-        </section>
-
-        <section class="tarefa">
-
-        </section>
+        <section class="todoList" id="todoList"></section>
     </main>
+
+    <footer>
+        Made by Cesar
+    </footer>
+    
 </body>
-<script src="js/main.js"></script>
 </html>
