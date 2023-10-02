@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List</title>
-    <meta name="author" content="Wagner Cesar Vieira">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Todo List</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/sobre.html">Sobre</a></li>
-                <li><a href="pages/ajuda.html">Ajuda</a></li>
-            </ul>
-        </nav>
+        <!-- menu retrátil lateral esquerda -->
+        <input type="checkbox" id="check">
+        <label id="icone" for="check"></label>
+        <section class="barra">
+            <nav>
+                <a href="#"><section class="Link">Home</section></a>
+                <a href="pages/sobre.html"><section class="Link">Sobre</section></a>
+                <a href="pages/ajuda.html#"><section class="Link">Ajuda</section></a>
+            </nav>
+        </section>
+        <!-- barra fixa azul horizontal -->
+
+        <label for="menu-hamburguer">
+            <section id="menu-hamburguer">
+                <span class="hamburguer"></span>
+            </section>
+        </label>        
     </header>
-
+    
     <main class="container">
-        <section class="titulo"></section>
+        <section class="todo_title">
+            Lista de tarefas
+        </section>
 
-        <section class="novoItem" id="novoItem">
+        <section class="todo_new-item" id="newItem">
             <section>&and;</section>
-            <input type="text" class="novoItem" placeholder="Digite sua tarefa aqui">
+            <input type="text" placeholder="Digite e pressione enter para adicionar a tarefa">
             <section>&and;</section>
         </section>
 
-        <section class="todoList" id="todoList"></section>
-    </main>
+        <section class="todo_list" id='todoList'></section>
 
-    <footer>
-        Made by Cesar
-    </footer>
-    
+        <footer>
+            Made by Cesar
+        </footer>
+        
+    </main>
+    <script src="js/main.js" defer></script>
 </body>
+
+
 </html>
